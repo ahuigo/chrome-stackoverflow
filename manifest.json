@@ -1,0 +1,22 @@
+{
+    "name": "Disable Stackoverflow's default shortcuts",
+    "manifest_version": 2,
+    "version": "1.0",
+    "content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": [
+            "https://stackoverflow.com/*",
+            "https://*.stackoverflow.com/*",
+            "https://superuser.com/*",
+            "https://meta.superuser.com/*",
+            "https://serverfault.com/*",
+            "https://meta.serverfault.com/*",
+            "https://askubuntu.com/*",
+            "https://meta.askubuntu.com/*",
+            "https://*.stackexchange.com/*",
+            "https://answers.onstartups.com/*",
+            "https://meta.answers.onstartups.com/*",
+            "https://stackapps.com/*"
+        ]
+    }]
+}
